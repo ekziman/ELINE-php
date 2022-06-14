@@ -1,0 +1,259 @@
+/*------------------------------------------------------------ account ------------------------------------------------------------*/
+.tab {
+    max-width: 100%;
+}
+.tabcontent .title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: #3D1D9A;
+    margin: 10px 20px;
+    padding-bottom: 20px;
+}
+.tabcontent .info {
+    display: flex;
+}
+/*-------- Аватар --------*/
+.tabcontent .my_image {
+    width: 150px;
+    height: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.tabcontent .my_image img{
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+}
+.avatar_profile {
+    position: relative;
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+.avatar_profile .btn_center {
+    border: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    width: 29px;
+    height: 29px;
+    margin-left: 1px;
+}
+.avatar_profile .btn_center svg {
+    border-radius: 4px;
+    display: inline-block;
+    vertical-align: middle;
+    fill: #3D1D9A;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.avatar_profile .btn_center svg:hover {
+    width: 30px;
+    height: 30px;
+}
+.avatar_profile .btn_center:hover {
+    font-weight: 600;
+}
+.example-2 {
+    padding-top: 10px;
+}
+.example-2 .form-group label span {
+    font-size: 10px;
+}
+.example-2 .form-group {
+    width: 150px;
+    margin: auto;
+    border-radius: 10px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+.example-2 .btn-tertiary {
+    color: #3D1D9A;
+    padding:0;
+    line-height: 30px;
+    width:120px;
+    display:block;
+    border:1px solid #3D1D9A;
+}
+.example-2 .btn-tertiary:hover,.example-2 .btn-tertiary:focus {
+    color:#3D1D9A;
+    font-weight: 600;
+    border:2px solid ;
+    border-color:#3D1D9A;
+}
+.example-2 .input-file {
+    width:.1px;
+    height:.1px;
+    opacity:0;
+    overflow:hidden;
+    position:absolute;
+    z-index:-1
+}
+.example-2 .input-file + .js-labelFile {
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    cursor:pointer;
+    height: 30px;
+    border-radius: 5px;
+}
+.example-2 .input-file + .js-labelFile .icon:before{
+    content:"\f093";
+}
+.example-2 .input-file + .js-labelFile.has-file .icon:before{
+    content:"\f00c";
+    color:#5AAC7B;
+}
+/*-------- Кнопка --------*/
+.tabcontent .profile .btn_center {
+    width: 150px;
+    height: 35px;
+    margin: auto;
+    background: linear-gradient(96.85deg, #FFDBA2 10.77%, #FDC66F 90.11%);
+    box-shadow: 9px 9px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #3D1D9A;
+    cursor: pointer;
+}
+.tabcontent .profile .btn_center:hover {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/*-------- Данные --------*/
+.tabcontent .profile {
+    margin-left: 20px;
+}
+.tabcontent .profile table tr{
+    margin-bottom: 10px;
+}
+.tabcontent .info p{
+    display: grid;
+    margin: 0;
+}
+.tabcontent .info p label{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: #3D1D9A;
+    margin: 0;
+}
+.tabcontent .profile .input{
+    width: 200px;
+    height: 25px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 5px;
+}
+.tabcontent .profile .account_form {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: #3D1D9A;
+    
+}
+.tab button:hover {
+    background-color: rgba(255,255,255, 0.3);
+    
+}
+.tab button.active {
+    background-color: rgba(61, 29, 154, 0.1);
+}
+.content-account {
+    margin-left: 86px;
+    width: 100%;
+}
+.tabcontent {
+    display: none;
+    float: left;
+    padding: 0px 12px;
+    height: 700px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 9px 9px 20px rgb(0 0 0 / 15%);
+}
+.profile-form__error {
+    font-size: 16px;
+    color: rgb(255, 0, 0);
+    margin: 15px 0 10px 0;
+    text-align: center;
+}
+.profile-form__successfully {
+    font-size: 18px;
+    color: #008000;
+    margin: 15px 0 10px 0;
+    text-align: center;
+    
+}
+
+
+.building {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.building img{
+    width: 600px;
+    height: 550px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.tabcontent .conbody {
+    display: block;
+    width: 100%;
+    margin-left: 10px;
+    padding-right: 10px;
+    color: #3D1D9A;
+    font-weight: normal;
+}
+.tabcontent .p {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #3D1D9A;
+    font-weight: normal;
+}
+.tabcontent .p .link {
+    color: blue;
+}
+.tabcontent .p .link:hover {
+    color: #fff;
+}
+.tabcontent .author {
+    margin-left: 20px;
+}
+

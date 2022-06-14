@@ -1,0 +1,384 @@
+/*------------------------------------------------------------ content ------------------------------------------------------------*/
+.content {
+    width: 100%;
+    margin-left: 86px;
+}
+
+.page-info {
+    display: flex;
+    align-items:center;
+    padding-bottom: 25px;
+}
+
+.center {
+    text-align: center;
+}
+.page-text {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: #3D1D9A;
+}
+
+.show-more {
+    background: #FFCF83;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    padding: 8px 12px;
+    display: block;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #3D1D9A;
+}
+
+.show-more:hover {
+    background: #F4DFC2;
+    font-weight: 600;
+}
+
+
+.page-main-line {
+    padding-bottom: 20px;
+}
+
+
+
+/*------------------------------------------------------------ track-chart ------------------------------------------------------------*/
+.about_artist {
+    display: flex;
+    padding-bottom: 30px;
+}
+
+.about_artist .img_artist{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+.about_artist .name{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.about_artist .name .nickname{
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 20px;
+    color: #3D1D9A;
+
+}
+
+.about_artist .name .description{
+    padding-bottom: 20px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+    color: #3D1D9A;
+}
+
+.about_artist .my_source{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 5px;
+}
+
+.about_artist .my_source img{
+    margin-left: 10px;
+}
+
+.about_artist .my_source .fave-vk{
+    width: 30px;
+    height: 30px;
+}
+
+.about_artist .my_source .fave-tg{
+    width: 30px;
+    height: 30px;
+}
+
+.about_artist .my_source .fave-inst{
+    width: 30px;
+    height: 30px;
+}
+
+.about_artist .my_source .fave-yt{
+    width: 30px;
+    height: 30px;
+}
+
+
+.page-main-tracks {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 35px;
+}
+
+.page-main__tracks {
+    width: 100%;
+    position: relative;
+}
+
+.page-main__tracks li {
+    position: relative;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: .3s linear;
+}
+.page-main__tracks li:hover {
+    background: rgba(255, 255, 255, 0.29);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+}
+
+.songItem {
+    width: 100%;
+    height: 50px;
+}
+
+.page-main-tracks li span {
+    margin-left: 5px;
+    width: 22px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #3D1D9A;
+}
+
+.page-main-tracks li img {
+    width: 40px;
+    height: 40px;
+    margin-left: 17px;
+    border-radius: 100px;
+}
+
+.page-main-tracks li h5 {
+    margin-left: 14px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #3D1D9A;
+}
+
+a {
+    text-decoration: none;
+}
+
+.page-main-tracks li h5 .subtitle {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.01em;
+    color: #3D1D9A;
+}
+
+.page-main-tracks li h5 .subtitle {
+    text-decoration:none; /*Убираем стандартное подчёркивание ссылки если оно ещё не убрано*/
+    display: inline-block; /*делаем чтобы наша ссылка из строчного элемента превратилась в строчно-блочный */
+    line-height: 1; /*Задаём высоту строки (можно в пикселях)*/
+}
+.page-main-tracks li h5 .subtitle:after {
+    display: block; /*превращаем его в блочный элемент*/
+    content: ""; /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
+    height: 1px; /*задаём высоту линии*/
+    width: 0%; /*задаём начальную ширину элемента (линии)*/
+    background-color: #3D1D9A; /*цвет фона элемента*/
+    transition: width 0.4s ease-in-out; /*данное свойство отвечает за плавное изменение ширины. Здесь можно задать время анимации в секундах (в данном случае задано 0.4 секунды)*/
+}
+.page-main-tracks li h5 .subtitle:hover:after,
+.page-main-tracks li h5 .subtitle:focus:after {
+    width: 100%;
+}
+
+.page-main__tracks li .actions {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.page-main__tracks li .like img {
+    width: 24px;
+    height: 24px;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+
+/* .like {
+    display: none;
+} */
+
+.music__like {
+    display: block;
+	background-image: url("../img/like.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+    color:#684BA1;
+}
+
+.music__like:hover {
+	background-image: url("../img/like-hover.svg");
+	color: #d62a61;
+}
+
+.music__like_active {
+	background-image: url("../img/like-active.svg");
+	color: #d62a61;
+}
+
+
+/* .page-main__track-left li:hover .like {
+    display: block;  
+} */
+
+
+
+.page-main__tracks li .bi {
+    margin-right: 15px;
+    top: 14px;
+    font-size: 24px;
+    color: #3D1D9A;
+}
+
+/*-----------------------------
+------------------------------- 
+--------- track-chart ---------
+-------------------------------
+-----------------------------*/
+@media (max-width: 1450px) {
+    .artist-card {
+        width: 190px;
+    }
+}
+
+
+@media (max-width: 760px) {
+    .about_artist {
+        display: block;
+    }
+    .page-text-title {
+        display: none;
+    }
+    .about_artist .name {
+        margin-left: 10px;
+    }
+    .aside {
+        min-width: 145px;
+    }
+    .content {
+        margin-left: 10px;
+    }
+    .artist-card {
+        width: 150px;
+    }
+    .avatar-card {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 620px) {
+    .container {
+        max-width: 400px;
+    }
+    .header {
+        max-width: 400px;
+    }
+    .content-container {
+        max-width: 400px;
+    }
+    .page-main-line {
+        margin-left: 0px;
+    }
+    .content {
+        margin-left: 0;
+    }
+    .page-main-info {
+        display: grid;
+    }
+
+    
+
+    .page-main-track .songItem {
+        flex-wrap: wrap;
+        max-width: 230px;
+        height: auto;
+        padding-bottom: 10px;
+        margin-top: 10px;
+    }
+    .page-main-cards .new_releases .songItem {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    /* audioplayer */
+    .player .master_play .info-bar {
+        padding-bottom: 10px;
+        width: 370px;
+        margin: auto;
+        order: -1;
+    }
+    .player .master_play .vol {
+        margin-right: 20px;
+        margin-top: 10px;
+        width: 20%;
+        order: 6;
+    }
+    .player .master_play .wave {
+        margin-left: 40px;
+        order: 2;
+    }
+    .player .master_play img {
+        order: 3;
+    }
+    .player .master_play h5 {
+        order: 4;
+        width: 60%;
+    }
+    .player .master_play .icon {
+        padding-top: 10px;
+        margin-left: 50px;
+        order: 5;
+    }
+    /* song-item */
+    .page-main-track li span {
+        order: 1;
+    }
+    .page-main-track li img {
+        order: 2;
+        margin-right: 50px;
+        margin-top: 5px;
+    }
+    .page-main-track li .bi{
+        order: 3;
+    }
+    .page-main-track li h5 {
+        order: 4;
+        margin-top: 5px;
+        margin-left: 30px;
+    }
+    .page-main-cards .new_releases .songItem {
+        display: grid;
+        max-width: 210px;
+
+    }
+    .page-main-cards .genre-cards .genre-card {
+        display: grid;
+        max-width: 210px;
+    }
+    
+}
